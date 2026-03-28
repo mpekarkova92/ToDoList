@@ -211,7 +211,8 @@ if (!isset($_SESSION['csrf_token'])) {
             <?php endforeach; ?>
         </ul>
 
-    </div> <script>
+    </div> 
+    <script>
         document.addEventListener("DOMContentLoaded", function() {
             const input = document.querySelector(".input-add"); // Opravila jsem i classu pro autofocus
             if (input) {
