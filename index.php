@@ -1,12 +1,6 @@
 <?php
 session_start();
 
-// === Připojení k databázi ===
-$host = "127.0.0.1";
-$dbname = "webypekarkovacz";
-$username = "webypekarkova001";
-$password = "Poklop22";
-
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
